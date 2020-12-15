@@ -1,30 +1,16 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Welcome to GargenG
+[![Deploy to DO](https://mp-assets1.sfo2.digitaloceanspaces.com/deploy-to-do/do-btn-blue.svg)](https://cloud.digitalocean.com/apps/new?repo=https://github.com/victorvhs/GardenG/tree/main)
+This is an application that will help you grow plants.
+There is nothing better than reconnecting with the earth and watching a small (sometimes not very small) plant life grow.
+* We are going to use the hottest technologies at the moment.
+* React.js for the frontend
+* Bulma.css
+* Chakra-ui
+* The power of Next.js to generate the site as quickly as possible.
+* The source of all plant information will be https://trefle.io/
 
-## Getting Started
+All of this will be running on the DigitalOcean cloud.
 
-First, run the development server:
+This app is for a DigitalOcean's Hackathon.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+You can read about the app on my https://dev.to articles.
