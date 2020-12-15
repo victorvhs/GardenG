@@ -4,13 +4,30 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    
 }
-
 a {
   color: inherit;
   text-decoration: none;
 }
-
 * {
   box-sizing: border-box;
+  background-color: #daffe2 ;
+}
+.menuBar{
+  font-size: x-large;
+  padding: 1px;
+}
+.menuBar ol{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  list-style: none;
+  border: 2px solid #C0c0c0 ;  
+}
+.menuBar ol li{
+  margin: 20px;
+}
+.menuBar ol li a:hover{
+  background-color: #23ffbe;
 }
