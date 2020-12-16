@@ -9,6 +9,12 @@ export default function Layout({
 }){
   return(
     <div>
+      <style jsx global>{`
+        html,
+        body {
+          font-family: Poppins;
+        }
+      `}</style>
       <Head>
         <title>{title}</title>
         <link rel="icon" href="/favicon.ico" />

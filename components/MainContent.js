@@ -3,14 +3,13 @@ import { FaBeer, FaEnvira, FaMoneyBillWave, FaSearchDollar, FaUserSecret } from 
 import Cards from './Cards'
 export default function MainContent(){
   return(
-    <Container>
+    <Container maxW="x1">
       <div className="title">
-        <h1>GargenG, Your helper for gardening</h1>
+        <h1>GardenG<span>Your helper for gardening</span></h1>
       </div>
       <div className="description">
         <p>
-        GardenG will help you with information on how to grow your beautiful plants in the best possible way.
-        Information about the time of flowers, fruits, soil conditions and many more.
+        GardenG will help you with information on how to grow your beautiful plants.
         </p>
       </div>
       <div className="CardsContainer">

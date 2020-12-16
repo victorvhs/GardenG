@@ -1,9 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 html,
 body {
   padding: 0;
-  margin: 0;
-  font-family: 'Poppins', sans-serif;    
+  margin: 0;  
 }
 a {
   color: inherit;
@@ -31,3 +29,24 @@ a {
 .menuBar ol li a:hover{
   background-color: #23ffbe;
 }
+.title{
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.title h1{
+  font-size: 9vh;
+  font-weight: bolder;
+  padding:10px 0 25px;
+}
+.title h1 span{
+  display: block;
+}
+.description{
+  max-width: 650px;
+  padding: 10px;
+  margin-left: 50px;
+}
+.description p{
+  font-size: 4vh;
+  color: #969696;
+} 
