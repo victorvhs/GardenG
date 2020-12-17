@@ -12,7 +12,8 @@ export default function Layout({
       <style jsx global>{`
         html,
         body {
-          font-family: Poppins;
+          font-family: Poppins, sans-serif;
+          color: red;
         }
       `}</style>
       <Head>

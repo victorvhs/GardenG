@@ -50,3 +50,20 @@ a {
   font-size: 4vh;
   color: #969696;
 } 
+.Footer{
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  justify-content: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+.Footer .faicon{
+  display: inline;
+}
+.Footer .last{  
+  padding-bottom: 6px;
+}
