@@ -13,7 +13,6 @@ export default function Layout({
         html,
         body {
           font-family: Poppins, sans-serif;
-          color: red;
         }
       `}</style>
       <Head>
