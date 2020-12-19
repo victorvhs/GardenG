@@ -1,14 +1,21 @@
 import Layout from '../components/Layout'
 import { Button, Input, InputGroup, InputRightElement, Text } from "@chakra-ui/react"
 import { useState } from 'react'
+
+const fetch = require('node-fetch')
+import PlantCards from '../components/PlantCards';
 export default function About(){
 
   const [plant,setPlant] = useState("")
 
-  const handlerInputChange = (event) =>{
+  const handlerInputChange = async (event) =>{
     setPlant(event.target.value)
-    console.log(plant)
+    
+    
     if (event.target.value.length+1 >= 3){
+      const response = await fetch('http://localhost:3000/api/hello?plant='+event.target.value.length);
+      const json = await response.json();
+      console.log(json);
       
     }
   }
@@ -16,7 +23,6 @@ export default function About(){
       <Layout>
         <h1>Find a plant</h1>
         <p>Insert a plant, specie or popular name</p>
-        <Text>Plant: {plant}</Text>
         <InputGroup size='md'>
           <Input
           pr='4.5rem'
@@ -30,6 +36,24 @@ export default function About(){
             </Button>
           </InputRightElement>
         </InputGroup>
+
+        <hr/>
+        <div className="ContainerCard">
+          <PlantCards/>
+          <PlantCards/>
+          <PlantCards/>
+          <PlantCards/>
+  
+          <PlantCards/>
+          <PlantCards/>
+          <PlantCards/>
+          <PlantCards/>
+
+          <PlantCards/>
+          <PlantCards/>
+          <PlantCards/>
+          <PlantCards/>
+        </div>
       </Layout>
   )
 }

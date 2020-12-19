@@ -1,0 +1,31 @@
+div .PlantCard{
+  background-color: aliceblue;
+  border-radius: 10px;
+  padding: 3px;
+  margin: 10px;
+  box-shadow:1px 1px 1px 2px rgba(0,0,0,0.77);
+-webkit-box-shadow: 1px 1px 1px 2px rgba(0,0,0,0.77);
+-moz-box-shadow: 1px 1px 1px 2px rgba(0,0,0,0.77);
+}
+div .PlantCard p{
+  border: 1px solid olive;
+  text-align: center;
+  padding: 3px;
+  margin: 5px;
+  border-radius: 9px;
+}
+div .PlantCard figure
+div .PlantCard figure img{
+  max-height: 227px;
+  max-width: 227px;
+}
+div .PlantCard figure img{
+  padding: 3px;
+  border-radius: 10px;
+}
+div .PlantCard figure figcaption{
+  text-align: center;
+  font-size: 15px;
+  display: block;
+
+}

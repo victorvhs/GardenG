@@ -67,3 +67,11 @@ a {
 .Footer .last{  
   padding-bottom: 6px;
 }
+div .ContainerCard{
+  display: grid;
+  grid-template-columns: 400px 400px 400px 400px;
+  justify-content: space-around;
+  margin: 5px;
+  border: 2px solid pink;
+
+}

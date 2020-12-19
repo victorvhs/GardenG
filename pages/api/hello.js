@@ -13,7 +13,7 @@ export default async (req, res) => {
     case 'GET': 
       if (!req.query.plant){
         res.statusCode=400;
-        res.send('You must provide a plant name')
+        res.json({error:'You must provide a plant name'})
         return
       }
       const query = req.query.plant;
