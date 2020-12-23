@@ -1,6 +1,6 @@
 import React from 'react'
 
-function PlantCards() {
+function PlantCards(props) {
   const data = {
     "data": [
       {
