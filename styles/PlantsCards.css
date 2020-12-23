@@ -1,8 +1,9 @@
 div .PlantCard{
+  max-width: 380px;
   background-color: aliceblue;
   border-radius: 10px;
   padding: 3px;
-  margin: 10px;
+  margin-bottom: 25px;
   box-shadow:1px 1px 1px 2px rgba(0,0,0,0.77);
 -webkit-box-shadow: 1px 1px 1px 2px rgba(0,0,0,0.77);
 -moz-box-shadow: 1px 1px 1px 2px rgba(0,0,0,0.77);
