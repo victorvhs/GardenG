@@ -3,7 +3,7 @@ import Layout from '../components/Layout'
 import React,{Component} from 'react'
 const fetch = require('node-fetch')
 import PlantCards from '../components/PlantCards';
-import data from './data'
+import data from '..temp_db/data'
 class About extends React.Component{
   constructor(){
     super()
