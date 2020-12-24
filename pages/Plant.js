@@ -1,5 +1,5 @@
 import Layout from '../components/Layout'
-//import { Button, Input, InputGroup, InputRightElement } from "@chakra-ui/react"
+import { Button, Input } from "@chakra-ui/react"
 import React,{Component} from 'react'
 const fetch = require('node-fetch')
 import PlantCards from '../components/PlantCards';
@@ -40,21 +40,26 @@ class About extends React.Component{
  
     return(
         <Layout>
-          <h1>Find a plant</h1>
-          <p>Insert a plant, specie or popular name</p>
-          <form onSubmit={this.handlerInputChange}>
-              <input
-              name='plant'
-              type='text'
-              placeholder='Insert here'
-              value={this.state.plant}
-              onChange={this.handleChange}
-              />
-                <button type='submit' h='1.75rem' size='sm'  >
-                  enter
-                </button>
-          </form>
-                <button onClick={this.handleClick}>Clear</button>
+          <div className="plantsInfo">
+            <h1>Find a plant</h1>
+          </div>
+          <div className="formPlantsContainer">
+            <form onSubmit={this.handlerInputChange} className='formPlants' >
+              <label htmlFor="plant">Insert a plant, specie or popular name </label>
+                <Input
+                name='plant'
+                type='text'
+                placeholder='Insert here'
+                value={this.state.plant}
+                onChange={this.handleChange}
+                id='plant'
+                />
+            </form>
+            <div className="plantsButton">
+                  <Button onClick={this.handlerInputChange}>Enter</Button>
+                  <Button onClick={this.handleClick}>Clear</Button>
+            </div>
+          </div>
           <div className="ContainerCard">
           {this.state.obj}
           </div>
