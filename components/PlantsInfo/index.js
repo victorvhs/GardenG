@@ -1,19 +1,15 @@
 import React from 'react'
-import Link from 'next/link'
-
 function PlantCards(props) {
   const data = props.data
   const id = data.id
   
-  const  getSpecies= async () =>{
-    const resp = await fetch('http://localhost:3000/api/hello',{
-      method: "POST",
-      body: JSON.stringify({"id":id}),
-      headers: {"Content-type": "application/json; charset=UTF-8"}
-    })
-    const retorno = await resp.json()
-    console.log(retorno)
-  }
+  /*TODO Criar layout para os detalhes da especie
+    TODO Criar logica para falta de imagens e falta de informações
+    TODO Criar função para converter o nome do pais em uma bandeira
+    FIXME Corrigir alerta de erro por falta da key
+    FIXME Contrante da cor de fundo
+    FIXME Colocar o site da api, porta e endereço de resolução local com variavel de ambiente.
+  */
   
   return(
     <div className='PlantCard'>

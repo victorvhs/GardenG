@@ -20,7 +20,7 @@ export default async (req, res) => {
       resp = await fetch('https://trefle.io/api/v1/plants/search/?token='+process.env.TOKEN_TREFLE+'&q='+query)
       json = await resp.json()
       break
-    case 'POST':
+    case 'POST':   
       if (!req.body.id){
         res.statusCode=400;
         res.send('You must provide a id plant')
