@@ -1,12 +1,13 @@
 import '../styles/globals.css'
 import '../styles/Card.css'
 import '../styles/PlantsCards.css'
+import 'tailwindcss/tailwind.css'
 import {ChakraProvider} from "@chakra-ui/react"
 function MyApp({ Component, pageProps }) {
   return(
-  <ChakraProvider>
+  <div>
     <Component {...pageProps} />
-  </ChakraProvider>)
+  </div>)
 }
 
 export default MyApp

@@ -1,7 +1,7 @@
 import Layout from '../components/Layout'
 import { Button, Input } from "@chakra-ui/react"
 import React,{Component} from 'react'
-const fetch = require('node-fetch')
+
 import PlantCards from '../components/PlantCards';
 import data from '../temp_db/data'
 class About extends React.Component{
@@ -45,8 +45,8 @@ class About extends React.Component{
             <h1>Find a plant</h1>
           </div>
           <div className="formPlantsContainer">
-            <form onSubmit={this.handlerInputChange} className='formPlants' >
-              <label htmlFor="plant">Insert a plant, specie or popular name </label>
+            <form onSubmit={this.handlerInputChange} className='m-4 formPlants' >
+              <label htmlFor="plant" className='font-normal text-3xl text-grey-darkest leading-loose my-3 w-full'>Search a plant</label>
                 <Input
                 name='plant'
                 type='text'
@@ -54,11 +54,21 @@ class About extends React.Component{
                 value={this.state.plant}
                 onChange={this.handleChange}
                 id='plant'
+                className='rounded-l-lg p-4 border-t mr-0 border-b border-l text-gray-800 border-gray-200 bg-white'
                 />
             </form>
-            <div className="plantsButton">
-                  <Button onClick={this.handlerInputChange}>Enter</Button>
-                  <Button onClick={this.handleClick}>Clear</Button>
+            <div className="plantsButton bg-purple">
+                  <Button 
+                    onClick={this.handlerInputChange}
+                    className='appearance-none bg-indigo-200 text-white text-base font-semibold tracking-wide uppercase p-3 rounded shadow hover:bg-indigo-light'
+                    >
+                      Enter
+                  </Button>
+                  <Button 
+                    onClick={this.handleClick}
+                    className='appearance-none bg-indigo-200 text-white text-base font-semibold tracking-wide uppercase p-1 rounded shadow hover:bg-pink-500'
+                    >Clear
+                  </Button>
             </div>
           </div>
           <div className="ContainerCard">

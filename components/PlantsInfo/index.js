@@ -8,7 +8,7 @@ function PlantCards(props) {
     TODO Criar função para converter o nome do pais em uma bandeira
     FIXME Corrigir alerta de erro por falta da key
     FIXME Contrante da cor de fundo
-    FIXME Colocar o site da api, porta e endereço de resolução local com variavel de ambiente.
+    FIXME Colocar o site da api, porta e endereço de resolução local com variável de ambiente.
   */
   
   return(

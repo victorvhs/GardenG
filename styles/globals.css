@@ -8,9 +8,7 @@ a {
   text-decoration: none;
 }
 * {
-  box-sizing: border-box;
-  background-color: #daffe21e ;
-  
+  box-sizing: border-box;  
 }
 .menuBar{
   font-size: x-large;
