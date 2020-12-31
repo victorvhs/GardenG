@@ -19,7 +19,7 @@ class About extends React.Component{
   async handlerInputChange (event) {
       event.preventDefault()
       let elm = []
-      const res = await fetch('http://localhost:3000/api/hello?plant='+this.state.plant)
+      const res = await fetch('/api/hello?plant='+this.state.plant)
       const json = await res.json()
       json.data.forEach((item)=>{
         elm.push( <PlantCards data={item}/>)
