@@ -6,7 +6,7 @@ function PlantCards(props) {
   const id = data.id
   
   const  getSpecies= async () =>{
-    const resp = await fetch('http://localhost:3000/api/hello',{
+    const resp = await fetch('/api/hello',{
       method: "POST",
       body: JSON.stringify({"id":id}),
       headers: {
