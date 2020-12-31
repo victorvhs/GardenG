@@ -1,5 +1,14 @@
 // Trefle recommended library to fetch data
 //const fetch = require('node-fetch')
+import Cors from "cors"
+import initMiddleware from "../../lib/init-mid"
+
+const cors = initMiddleware(
+  Cors({
+    methods: ['GET','POST'],
+  })
+)
+
 
 export default async (req, res) => {
   const {
@@ -7,6 +16,7 @@ export default async (req, res) => {
     method,
   }= req
 
+  await cors(req,res)
   let resp, json
 
   switch (method){
