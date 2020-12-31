@@ -9,7 +9,14 @@ function PlantCards(props) {
     const resp = await fetch('http://localhost:3000/api/hello',{
       method: "POST",
       body: JSON.stringify({"id":id}),
-      headers: {"Content-type": "application/json; charset=UTF-8"}
+      headers: {
+        "Content-type": "application/json; charset=UTF-8",
+        "Access-Control-Allow-Credentials":"true",
+        "Access-Control-Allow-Origin":"*",
+        "Access-Control-Allow-Methods":"GET,POST",
+        "Access-Control-Allow-Headers":"X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version"
+      
+      }
     })
     const retorno = await resp.json()
     console.log(retorno)
