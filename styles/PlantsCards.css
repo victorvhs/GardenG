@@ -1,6 +1,6 @@
 div .PlantCard{
   max-width: 380px;
-  background-color: rgba(198, 241, 127, 0.226);
+  background-color: rgba(252, 252, 252, 0.226);
   border-radius: 10px;
   padding: 3px;
   margin-bottom: 25px;
@@ -16,14 +16,15 @@ div .PlantCard p{
   border-radius: 9px;
 
 }
-div .PlantCard figure
-div .PlantCard figure img{
-  max-height: 227px;
-  max-width: 227px;
-}
+
 div .PlantCard figure img{
   padding: 3px;
   border-radius: 10px;
+  max-height: 227px;
+  max-width: 327px;
+  min-height: 227px;
+  min-width: 327px;
+
 }
 div .PlantCard figure figcaption{
   text-align: center;

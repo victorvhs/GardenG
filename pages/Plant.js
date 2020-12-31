@@ -1,5 +1,4 @@
 import Layout from '../components/Layout'
-import { Button, Input } from "@chakra-ui/react"
 import React,{Component} from 'react'
 
 import PlantCards from '../components/PlantCards';
@@ -47,7 +46,7 @@ class About extends React.Component{
           <div className="formPlantsContainer">
             <form onSubmit={this.handlerInputChange} className='m-4 formPlants' >
               <label htmlFor="plant" className='font-normal text-3xl text-grey-darkest leading-loose my-3 w-full'>Search a plant</label>
-                <Input
+                <input
                 name='plant'
                 type='text'
                 placeholder='Insert here'
@@ -58,17 +57,17 @@ class About extends React.Component{
                 />
             </form>
             <div className="plantsButton bg-purple">
-                  <Button 
+                  <button 
                     onClick={this.handlerInputChange}
                     className='appearance-none bg-indigo-200 text-white text-base font-semibold tracking-wide uppercase p-3 rounded shadow hover:bg-indigo-light'
                     >
                       Enter
-                  </Button>
-                  <Button 
+                  </button>
+                  <button 
                     onClick={this.handleClick}
                     className='appearance-none bg-indigo-200 text-white text-base font-semibold tracking-wide uppercase p-1 rounded shadow hover:bg-pink-500'
                     >Clear
-                  </Button>
+                  </button>
             </div>
           </div>
           <div className="ContainerCard">

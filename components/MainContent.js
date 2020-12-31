@@ -1,9 +1,8 @@
-import {Container } from "@chakra-ui/react"
 import { FaBeer, FaEnvira, FaMoneyBillWave, FaSearchDollar, FaUserSecret } from 'react-icons/fa'
 import Cards from './Cards'
 export default function MainContent(){
   return(
-    <Container maxW="x1">
+    <div className='container relative mx-auto'>
       <div className="title">
         <h1>GardenG<span>Your helper for gardening</span></h1>
       </div>
@@ -12,7 +11,7 @@ export default function MainContent(){
         GardenG will help you with information on how to grow your beautiful plants.
         </p>
       </div>
-      <div className="CardsContainer">
+      <div className="relative flex flex-row" >
         <Cards 
         description="Without login, none of your information will be saved on the servers. 100% privacy." 
         icon={<FaUserSecret/>}/>
@@ -27,6 +26,6 @@ export default function MainContent(){
         />
       </div>
 
-    </Container>
+    </div>
     )
 }

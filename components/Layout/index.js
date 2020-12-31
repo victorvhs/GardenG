@@ -8,7 +8,7 @@ export default function Layout({
   title='GardenG',
 }){
   return(
-    <div>
+    <div className='container mx-auto'>
       <style jsx global>{`
         html,
         body {
@@ -19,7 +19,7 @@ export default function Layout({
         <title>{title}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navbar/>
+      <Navbar />
       {children}
       <Footer></Footer>
 

@@ -27,10 +27,20 @@ function PlantCards(props) {
         <label>{data.scientific_name} </label>
       </p>
       <figure>
-        <img src={data.image_url} alt={data.common_name}/>
+        <img src={data.image_url} alt={data.common_name} />
         <figcaption>{data.bibliography}</figcaption>
       </figure>
-      <button onClick={getSpecies}>More information</button>
+      <button onClick={getSpecies} className='
+      w-full 
+      h-12 
+      px-6 
+      text-indigo-100 
+      transition-colors 
+      duration-150 
+      bg-indigo-700 
+      rounded-lg 
+      focus:shadow-outline 
+      hover:bg-indigo-800'>More information</button>
     </div>
   )
 }
