@@ -102,6 +102,7 @@ class About extends React.Component{
                     rounded 
                     shadow 
                     hover:bg-pink-500'
+                    type="reset"
                     >Clear
                   </button>
             </form>

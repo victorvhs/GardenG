@@ -5,18 +5,18 @@ import initMiddleware from "../../lib/init-mid"
 
 const cors = initMiddleware(
   Cors({
-    methods: ['GET','POST'],
+    methods: ['GET','POST','OPTIONS'],
   })
 )
 
-
 export default async (req, res) => {
+  await cors(req,res)
+
   const {
     query: {plant},
     method,
   }= req
 
-  await cors(req,res)
   let resp, json
 
   switch (method){
